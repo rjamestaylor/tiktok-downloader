@@ -5,12 +5,14 @@ This is made for MacOS users, which I am.
 
 ## Step 1: Initiate Request to Download TikTok data
 
-![CleanShot 2025-01-11 at 19 07 31@2x](https://github.com/user-attachments/assets/fce1ffb8-a2c7-48e0-aa09-50aaab5867f7)
+Specify "json" when prompted, not TXT:
+
+![CleanShot 2025-01-11 at 19 30 05@2x](https://github.com/user-attachments/assets/16b93120-3627-46c9-ba1a-f6320aee843e)
 
 
-## Step 2: Download as JSON
+## Step 2: Download the JSON
 
-Once the download is ready, you can request the download. Specify "json" if prompted:
+Once the download is ready, you can request the download:
 
 ![CleanShot 2025-01-11 at 19 08 19@2x](https://github.com/user-attachments/assets/668ca0ed-7437-404b-9268-fd68d3d9cb8c)
 
