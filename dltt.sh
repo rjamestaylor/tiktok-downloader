@@ -25,8 +25,13 @@ jq -r '.[]| .Videos.VideoList| try .[]| .Link + "," + .Date + "," + .WhoCanView'
     FILENAME="${date}.mov"
 
     # Download the file
-    echo "Downloading $link to $TARGET_DIR/$FILENAME"
-    curl -s -o "$TARGET_DIR/$FILENAME" "$link"
+    if [[ -f "$TARGET_DIR/$FILENAME" ]]; then
+        echo "File $FILENAME already exists in $TARGET_DIR. Skipping download."
+        continue
+    else
+        echo "Downloading $link to $TARGET_DIR/$FILENAME"
+        curl -s -o "$TARGET_DIR/$FILENAME" "$link"
+    fi
 
     # Check if the download was successful
     if [[ $? -eq 0 ]]; then
