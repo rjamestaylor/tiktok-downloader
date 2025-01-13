@@ -17,7 +17,7 @@ Once the download is ready, you can request the download:
 ![CleanShot 2025-01-11 at 19 08 19@2x](https://github.com/user-attachments/assets/668ca0ed-7437-404b-9268-fd68d3d9cb8c)
 
 
-Choose "json" option and download to a place you'll remember, like:
+Choose download to a place you'll remember, like:
 `~/Downloads/user_data_tiktok.json`
 
 ## Step 3: Create a directory with private and public sub directories
@@ -32,5 +32,8 @@ If you haven't cloned this repo, grab the `dltt.sh` script and copy it to your M
 
 `sh ./dltt.sh`
 
+## Step 6: Restart if needed
+
+The script now checks to see if the file already exists in the designated folder and skips download if so. You can resume an interrupted download as needed. Also, to try a download again, remove the desired file and re-run the script.
 
 
